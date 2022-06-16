@@ -1,4 +1,4 @@
-.logo{
+/* .logo{
     animation: rotation 5s infinite linear;
     width: 50px; height:50px;
     margin: 100px;
@@ -10,7 +10,15 @@
     transform: rotate(360deg);
   }
 
+} */
+.logo{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  height: 50px;
+  width: 50px;
+  background-color: black;
 }
+
+
 /* .logo:after{
   transform:rotate(-57deg);
 }
