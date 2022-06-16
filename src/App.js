@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Typical from "react-typical";
+import { useEffect, useState } from "react";
+import { ClimbingBoxLoader, ClipLoader, PacmanLoader } from "react-spinners";
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {loading ? (
+        <div className="loader"><PacmanLoader color={'#64ffda'} loading={loading} size={30}  /></div>
+      ) : (
+        <>
+          {" "}
+          <Header />
+          <Routes></Routes>
+          <Typical
+          steps={["Hello", 500, "world!", 500, "jasim", 500]}
+          loop={Infinity}
+          wrapper="p"
+        />
+        </>
+      )}
     </div>
   );
 }
