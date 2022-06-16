@@ -13,7 +13,7 @@ function App() {
     }, 3000);
   }, []);
   return (
-    <div className="App">
+    <div className="main">
       {loading ? (
         <div className="loader"><PacmanLoader color={'#64ffda'} loading={loading} size={30}  /></div>
       ) : (
@@ -21,11 +21,6 @@ function App() {
           {" "}
           <Header />
           <Routes></Routes>
-          <Typical
-          steps={["Hello", 500, "world!", 500, "jasim", 500]}
-          loop={Infinity}
-          wrapper="p"
-        />
         </>
       )}
     </div>

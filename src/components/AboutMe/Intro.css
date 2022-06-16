@@ -1,0 +1,35 @@
+
+*{
+    margin:0;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-left: 15%;
+    color:var(--green);
+
+}
+p{
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+    margin-left: 15%;
+    font-size: 80px;
+}
+.big-heading{
+    font-size: 80px;
+    color: var(--slate);
+    margin-left: 15%;
+}
+.para-me{
+    font-size: 20px;
+    color: var(--slate);
+    margin-left: 15%;
+    width:50%;
+
+}
+.check-button{
+    margin-left: 15%;
+    margin-top: 50px;
+}
