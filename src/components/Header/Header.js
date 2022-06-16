@@ -42,9 +42,8 @@ const Header = () => {
             <div className="container">
               <a
                 href={resume}
-                download="JasimUddin_RESUME_.pdf"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className=""
               >
                 <Button variant="outline-info">RESUME</Button>{" "}
@@ -55,6 +54,7 @@ const Header = () => {
       </div>
 
       <Intro id="aboutme" />
+      
     </div>
   );
 };
