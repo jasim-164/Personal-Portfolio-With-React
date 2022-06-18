@@ -10,7 +10,7 @@ h2{
     color:var(--green);
 
 }
-p{
+.name{
     font-weight: 600;
     color: var(--lightest-slate);
     line-height: 1.1;

@@ -1,0 +1,29 @@
+
+  .line{
+    height: .07px;
+    background-color: white;
+    width:500px;
+    
+}
+.para-me{
+    width: 510px;
+}
+/* .header-aboutme{
+  
+} */
+.profile-img:hover {
+    
+    transform:  scale(1.1);
+
+    filter: contrast(100%);  
+    
+}
+.profile-img { filter: contrast(60%); 
+    
+    filter: saturate(50%);
+}
+.img-border{
+    border: 1px solid #ccc;
+    
+    padding: 10px;
+}
